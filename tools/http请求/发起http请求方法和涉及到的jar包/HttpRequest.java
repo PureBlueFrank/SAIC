@@ -11,7 +11,14 @@ import org.apache.commons.httpclient.methods.PostMethod;
 import org.apache.commons.httpclient.params.HttpMethodParams;
 
 public class HttpRequest {
-	
+	/**
+	 * 
+	 * @param url 请求的地址
+	 * @param params 请求的参数
+	 * @param codePage 请求的编码格式
+	 * @return result 返回结果
+	 * @throws Exception
+	 */
 	public synchronized static String postData(String url, Map<String, String> params, String codePage) throws Exception {
 
 		final HttpClient httpClient = new HttpClient();
